@@ -1,0 +1,282 @@
+/*********************************BEGIN TYPOGRAPHY****************************/
+body {
+  /* Typography declarations */
+  color: #182140; /*navy from image*/
+  font-size: 1em;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0;
+}
+em {
+  font-weight: bolder;
+}
+.introduction > p, 
+.where > p,
+.content-footer > p {
+    /* Typography declarations */
+  font-weight: 300;
+  letter-spacing: 0.05em;
+}
+.questions > h3 {
+    /* Typography declarations */
+/*  font-family: 'Homenaje', sans-serif;
+*/
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #FF0066; /*pink from image*/
+}
+.masthead-intro {
+    /* Typography declarations */
+    font-family: "Gentium Book Basic", Georgia, serif;
+    font-size: 2em;
+    color: #FF0066; /*pink from image*/
+}
+.masthead-heading { 
+    /* Typography declarations */
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  font-size: 6em;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #FF0066; /*pink from image*/
+  text-shadow: 1px 1px 1px #182140;
+}
+nav,
+nav h2{
+  font-weight: lighter;
+}
+section > p > a {
+  /* Typography declarations */
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+nav {
+  /* Typography declarations */
+  color: white;
+}
+/*********************************END TYPOGRAPHY****************************/
+
+/********************************BEGIN LAYOUT********************************/
+
+nav {
+  /* Layout declarations */
+  width: 100%;
+  height: 3em;
+  display: inline-block; /*removes top margin!*/
+}
+nav.sections{
+  text-align: center;
+}
+nav h2{
+  text-align: center;
+  vertical-align: middle;
+}
+.internal-links > li{
+  display: inline-block;
+  padding-left: 1.25em;
+}
+.wrapper > * {
+/*  display: inline-block; save for larger screens
+*/}
+.wrapper{
+  padding: 2em;
+  margin: 0 auto;
+}
+.selfie{
+  height: 16em;
+  width: 16em;
+  border-radius: 50%;
+    background-image: url('../images/Selfie-office.jpg');
+  background-repeat: no-repeat;
+  background-size: cover; 
+  margin: 0 auto;
+}
+.wrapper .text {
+  text-align: center;
+}
+
+.masthead-intro {
+  /* Layout declarations */
+  margin-bottom: 0.1em;
+}
+.masthead-heading { 
+  /* Layout declarations */
+  margin-top: -0.2em;
+}
+.questions > h3 {
+  /* Layout declarations */
+  margin: 2em 0 1em 0;
+}
+
+.masthead-heading,
+.masthead-intro,
+.content-footer {
+  /* Layout declarations */
+  text-align: center;
+}
+.masthead {
+    /* Layout declarations */
+  padding: 1em 0 9em 0; /*top-bottom right-left*/
+  background-image: url('../images/fjord.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 1%;
+  border-top: solid 1em #FF0066;
+}
+.masthead-intro {
+  /* Layout declarations */
+  margin-bottom: 0.1em;
+}
+.masthead-heading {
+  /* Layout declarations */
+  margin-top: -0.2em;
+}
+
+section.projects,
+section.introduction,
+section.where,
+section.questions,
+.wrapper{
+    /* Layout declarations */
+  max-width: 38em; /*best way to center*/
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+}
+section > h1 {
+    /* Layout declarations */
+  margin-top: 2em;
+}
+
+.content-footer {
+    /* Layout declarations */
+  position: relative;
+  padding: 2em 0;
+}
+.content-footer > p {
+    /* Layout declarations */
+    font: 3em/3em, Helvetica;
+}
+.content-footer > p > a {
+    /* Layout declarations */
+  text-decoration: none;
+}
+.social > li {
+    /* Layout declarations */
+  display: inline-block;
+}
+ul.social {
+    /* Layout declarations */
+  -webkit-padding-end: 40px;
+}
+.icons {
+    /* Layout declarations */
+  padding: 0 1em;
+}
+
+
+/********************************END LAYOUT********************************/
+/********************************BEGIN COLOR********************************/
+nav {
+  /*color*/
+  background-color: black; /*temp*/
+}
+section > p > a {
+  color: #5D768E; /*french blue from image*/
+}
+.masthead {
+  /*color*/
+  border-top: solid 1em #FF0066;
+}
+.content-footer {
+    /*color*/
+  background-color: #182140; /*navy from image*/
+}
+.content-footer > p {
+    /*color*/
+  color: #A4D8CC; /*mint from image*/
+}
+.content-footer > p > a {
+  /*color*/
+  color: white;
+}
+.icons {
+  /*color*/
+  color: white;
+}
+
+/********************************* responsive ******************************** */
+
+@media only screen and (max-width: 640px) {
+  /* re-size header image */
+  /* replace header image */
+    .masthead {
+      padding: 3em 0;
+      background-image: url('../images/fjordmedium.jpeg');
+    }
+    /* re-size lead font */
+    .masthead-heading {
+        font-size: 3em;
+    }
+    /* margin on body adjust */
+    /* margin on footer adjust */
+    section.introduction,
+    section.where,
+    section.questions
+     {
+      max-width: 30em; /*best way to center*/
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 1em;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+  /* re-size header image */
+  /* replace header image */
+      .masthead {
+        padding: 2em 0;
+        background-image: url('../images/fjordsmall.jpeg');
+    }
+    /* re-size lead font */
+    .masthead-heading {
+        font-size: 3em;
+    }
+    /* margin on body adjust */
+    /* margin on footer adjust */
+    section.introduction,
+    section.where,
+    section.questions
+    {
+      max-width: 18em; /*best way to center*/
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 1em;
+    }
+}
+@media only screen and (max-width: 320px) {
+  /* re-size header image */
+  /* replace header image */
+      .masthead {
+        padding: 2em 0;
+        background-image: url('../images/fjordsmall.jpeg');
+    }
+    /* re-size lead font */
+    .masthead-heading {
+        font-size: 3em;
+    }
+    /* margin on body adjust */
+    /* margin on footer adjust */
+    section.introduction,
+    section.where,
+    section.questions
+    {
+      max-width: 18em; /*best way to center*/
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 1em;
+    }
+}
+
+
